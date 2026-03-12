@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Support Ticket Intelligence Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+<h2>⚡ STIIS</h2>
+<p class="sidebar-sub">Issue Intelligence</p>
+
+<ul class="menu">
+<li class="active">Dashboard</li>
+<li>Issues</li>
+<li>Trends</li>
+<li>Tickets</li>
+<li>Settings</li>
+</ul>
+
+</div>
+
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+<h1>Dashboard</h1>
+<p class="subtitle">
+Monitor support ticket trends and issue intelligence
+</p>
+
+
+<!-- STAT CARDS -->
+<div class="stats">
+
+<div class="stat">
+<h3>Total Tickets</h3>
+<p id="totalTickets">0</p>
+</div>
+
+<div class="stat">
+<h3>Active Issue Clusters</h3>
+<p id="totalClusters">0</p>
+</div>
+
+<div class="stat">
+<h3>Emerging Issues</h3>
+<p id="emergingIssues">0</p>
+</div>
+
+</div>
+
+
+<!-- CHART SECTION -->
+<div class="charts">
+
+<div class="chart-card">
+
+<h2>📊 Issue Trend Chart</h2>
+
+<div class="chart-wrapper">
+<canvas id="trendChart"></canvas>
+</div>
+
+</div>
+
+
+<div class="chart-card">
+
+<h2>📈 Cluster Distribution</h2>
+
+<div class="chart-wrapper">
+<canvas id="clusterChart"></canvas>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- CLUSTER LIST -->
+<h2 class="section-title">Issue Clusters</h2>
+
+<div id="clusters" class="clusters"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
