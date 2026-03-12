@@ -229,8 +229,8 @@ The dashboard visualizes:
 
 # Future Improvements
 
-• real-time ticket ingestion
-• advanced topic modeling (BERTopic)
+  
+• Time-Based Analysis
 • issue severity prediction
 • alert system for emerging issues
 • authentication and role-based access
